@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "265783976211",
+    "project_id": "atlanta-ef538",
+    "storage_bucket": "atlanta-ef538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265783976211:android:66c74c2ed13a7487f2bae6",
+        "android_client_info": {
+          "package_name": "com.example.atlanta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265783976211-sns2100hcmgls2sj7sek6j2ebs3ipd16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS6AX2zkEcnhWl231vbf90bTTsbtRNYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265783976211-sns2100hcmgls2sj7sek6j2ebs3ipd16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265783976211:android:a05a16bdf47bb359f2bae6",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265783976211-sns2100hcmgls2sj7sek6j2ebs3ipd16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS6AX2zkEcnhWl231vbf90bTTsbtRNYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265783976211-sns2100hcmgls2sj7sek6j2ebs3ipd16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
