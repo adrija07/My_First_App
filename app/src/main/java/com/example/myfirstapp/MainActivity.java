@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button discoverAtlantaButton;
     private Button newNoteButton;
     private Button signOutButton;
+    private Button myNotesButton;
 
     private FirebaseAuth firebaseAuth;
 
@@ -57,6 +58,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent newNoteIntent = new Intent(MainActivity.this, NewNoteActivity.class);
                 startActivity(newNoteIntent);
+                finish();
+            }
+        });
+
+        myNotesButton = findViewById(R.id.my_notes_button);
+        myNotesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myNotesIntent = new Intent(MainActivity.this, MyNotesActivity.class);
+                startActivity(myNotesIntent);
                 finish();
             }
         });

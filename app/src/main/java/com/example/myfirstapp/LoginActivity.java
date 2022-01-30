@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                                 navigateToMainPage();
                             } else {
                                 String error = task.getException().getMessage();
-                                Toast.makeText(LoginActivity.this, "Authentication error: " + error, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Authentication error: " + error, Toast.LENGTH_LONG).show();
                                 //loginPasswordText.setText(null);
                             }
                         }
