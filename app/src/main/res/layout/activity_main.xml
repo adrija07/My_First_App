@@ -16,7 +16,7 @@
         android:backgroundTint="@color/primary"
         android:text="@string/show_atlanta_in_maps_value"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/white" />
+        app:titleTextColor="@color/text" />
 
     <Button
         android:id="@+id/discover_atlanta_button"
@@ -44,7 +44,7 @@
         android:backgroundTint="@color/primary"
         android:text="@string/discover_atlanta_value"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/primary"
         android:text="@string/sign_out_value"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -75,10 +75,26 @@
         android:backgroundTint="@color/primary"
         android:text="Add a New Note"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/discover_atlanta_button" />
+
+    <Button
+        android:id="@+id/my_notes_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/primary"
+        android:text="My Notes"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_note_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
