@@ -31,8 +31,7 @@ import java.util.Map;
 
 public class MyNotesActivity extends AppCompatActivity {
 
-    private ConstraintLayout myNotesTextArea;
-    private Button myNotesButton;
+    private TextView myNotesTextArea;
     private static final String TAG = "MyActivity";
 
     FirebaseAuth firebaseAuth;
@@ -46,13 +45,9 @@ public class MyNotesActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        myNotesTextArea = (ConstraintLayout) findViewById(R.id.my_notes_textarea);
-        myNotesButton = (Button) findViewById(R.id.my_notes_button);
-
-        myNotesButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+        myNotesTextArea = (TextView) findViewById(R.id.my_notes_textarea);
+        final String[] myNotesText = {myNotesTextArea.toString()};
+                String currentUserID = firebaseAuth.getCurrentUser().getUid();
                     db.collection("notes")
                             .get()
                             .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -60,16 +55,15 @@ public class MyNotesActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                     if (task.isSuccessful()) {
                                         for (QueryDocumentSnapshot document : task.getResult()) {
-
-                                            Log.d(TAG, document.getId() + " => " +
-                                                    document.getData());
+                          //                  myNotesText[0] = currentUserID + " => " + document.getData().get("note");
+                          //                   Log.d(TAG, currentUserID + " => " + document.getData().get("note")
+                          //                          );
+                                            System.out.println(currentUserID);
                                         }
                                     } else {
-                                        Log.w(TAG, "Error getting notes", task.getException());
+                                        myNotesText[0] = String.valueOf(Log.w(TAG, "Error getting notes", task.getException()));
                                     }
                                 }
                             });
             }
-        });
-    }
 }

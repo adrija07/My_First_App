@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myNotesButton = findViewById(R.id.my_notes_button);
+/*        myNotesButton = findViewById(R.id.my_notes_button);
         myNotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myNotesIntent);
                 finish();
             }
-        });
+        });*/
 
         signOutButton = findViewById(R.id.sign_out_button);
         signOutButton.setOnClickListener(new View.OnClickListener() {

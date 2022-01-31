@@ -203,7 +203,9 @@ public class LocationMapsActivity extends FragmentActivity implements OnMapReady
             String address = localityName + ", " + countryName;
 
             mMap.addMarker(new MarkerOptions().position(atlanta).title(address));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(atlanta));
+//            mMap.moveCamera(CameraUpdateFactory.newLatLng(atlanta));
+            float zoomLevel = 16.0f; //This goes up to 21
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(atlanta, zoomLevel));
             //mMap.animateCamera(CameraUpdateFactory.zoomIn());
         } catch (IOException e) {
             e.printStackTrace();
