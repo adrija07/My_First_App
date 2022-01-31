@@ -1,5 +1,7 @@
 package com.example.myfirstapp;
-
+/*
+Implemented by Adrija : completed on 01/30/2022
+*/
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
